@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@font-face {
+  font-family: 'Veneer';
+  src: url("../fonts/Veneer.woff2") format("woff2"), url("../fonts/Veneer.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'DoubleTake-Regular';
+  src: url("../fonts/DoubleTake-Regular.woff2") format("woff2"), url("../fonts/DoubleTake-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadPro.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+body {
+  font-family: "Roboto", sans-serif; }
+
 @media (min-width: 1200px) {
   .container {
     width: 1000px; } }
@@ -12,13 +31,19 @@
     width: 100%;
     top: 42px;
     max-width: 266px; }
+    @media only screen and (max-width: 767px) {
+      .mct-banner .logo {
+        max-width: 180px; } }
     .mct-banner .logo img {
       display: block;
       width: 100%; }
   .mct-banner figure {
     width: 100%;
     position: relative;
-    padding-bottom: 60%; }
+    padding-bottom: 31%; }
+    @media only screen and (max-width: 767px) {
+      .mct-banner figure {
+        padding-bottom: 80%; } }
     .mct-banner figure img {
       position: absolute;
       width: 100%;
@@ -27,5 +52,399 @@
       left: 0;
       object-fit: cover;
       object-position: center; }
+
+.textBlock-section {
+  padding-bottom: 36px; }
+  .textBlock-section .title {
+    text-align: center;
+    margin-top: -58px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 31px; }
+    @media only screen and (max-width: 991px) {
+      .textBlock-section .title {
+        margin-top: -45px; } }
+    @media only screen and (max-width: 767px) {
+      .textBlock-section .title {
+        margin-top: -25px; } }
+    .textBlock-section .title h2 {
+      background-color: #a9132a;
+      font-family: "Veneer", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 70px;
+      line-height: 46px;
+      padding: 21px 24px 28px;
+      margin: 0;
+      width: auto;
+      display: inline-block; }
+      @media only screen and (max-width: 991px) {
+        .textBlock-section .title h2 {
+          font-size: 46px;
+          line-height: 29px;
+          padding: 17px 24px 20px; } }
+      @media only screen and (max-width: 767px) {
+        .textBlock-section .title h2 {
+          font-size: 32px;
+          line-height: 32px;
+          padding: 5px 14px 8px; } }
+  .textBlock-section .text_block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .textBlock-section .text_block .text_content {
+      width: 59%; }
+      @media only screen and (max-width: 991px) {
+        .textBlock-section .text_block .text_content {
+          width: 100%;
+          order: 2;
+          text-align: center; } }
+      .textBlock-section .text_block .text_content h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0;
+        color: #000;
+        font-size: 22px;
+        line-height: 26px;
+        margin: 0;
+        margin-bottom: 20px; }
+        @media only screen and (max-width: 767px) {
+          .textBlock-section .text_block .text_content h3 {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 15px; } }
+      .textBlock-section .text_block .text_content .dis p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #000;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0; }
+        @media only screen and (max-width: 767px) {
+          .textBlock-section .text_block .text_content .dis p {
+            font-size: 16px;
+            line-height: 22px; } }
+    .textBlock-section .text_block .text_intro {
+      width: 41%; }
+      @media only screen and (max-width: 991px) {
+        .textBlock-section .text_block .text_intro {
+          width: 100%;
+          order: 1; } }
+      .textBlock-section .text_block .text_intro .rounded_shap {
+        position: relative;
+        margin: 0 auto;
+        background-color: #231f20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        letter-spacing: 0;
+        color: #fff;
+        border-radius: 100%;
+        font-size: 38px;
+        line-height: 42px;
+        width: 231px;
+        height: 231px; }
+        @media only screen and (max-width: 991px) {
+          .textBlock-section .text_block .text_intro .rounded_shap {
+            margin-bottom: 30px; } }
+        @media only screen and (max-width: 767px) {
+          .textBlock-section .text_block .text_intro .rounded_shap {
+            font-size: 26px;
+            line-height: 32px;
+            width: 180px;
+            height: 180px;
+            padding: 30px;
+            margin-bottom: 20px; } }
+        .textBlock-section .text_block .text_intro .rounded_shap .arrow-shap {
+          position: absolute;
+          top: -40px;
+          right: -10px;
+          width: 48px; }
+          @media only screen and (max-width: 991px) {
+            .textBlock-section .text_block .text_intro .rounded_shap .arrow-shap {
+              display: none; } }
+          .textBlock-section .text_block .text_intro .rounded_shap .arrow-shap img {
+            display: block;
+            width: 100%; }
+
+.icon_title_section {
+  background-color: #efefef;
+  padding: 65px 0 40px; }
+  @media only screen and (max-width: 767px) {
+    .icon_title_section {
+      padding: 30px 0 10px; } }
+  .icon_title_section .title h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #000;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 58px; }
+    @media only screen and (max-width: 767px) {
+      .icon_title_section .title h2 {
+        margin-bottom: 30px;
+        font-size: 20px; } }
+  .icon_title_section .blocks {
+    display: flex;
+    flex-wrap: wrap; }
+    .icon_title_section .blocks .items {
+      width: 33.3333%;
+      margin-bottom: 33px; }
+      @media only screen and (max-width: 767px) {
+        .icon_title_section .blocks .items {
+          width: 50%; } }
+      .icon_title_section .blocks .items .innerWrapper {
+        width: 100%;
+        margin: auto;
+        max-width: 190px; }
+        @media only screen and (max-width: 767px) {
+          .icon_title_section .blocks .items .innerWrapper {
+            max-width: 120px; } }
+        .icon_title_section .blocks .items .innerWrapper .icons {
+          width: 100%;
+          height: 143px;
+          max-width: 180px;
+          text-align: center;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          margin: auto;
+          margin-bottom: 32px; }
+          @media only screen and (max-width: 767px) {
+            .icon_title_section .blocks .items .innerWrapper .icons {
+              margin-bottom: 20px;
+              height: 50px;
+              max-width: 80px; } }
+          .icon_title_section .blocks .items .innerWrapper .icons img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%; }
+        .icon_title_section .blocks .items .innerWrapper p {
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+          letter-spacing: 0;
+          color: #000;
+          margin: 0;
+          text-align: center;
+          font-size: 20px;
+          line-height: 24px; }
+          @media only screen and (max-width: 767px) {
+            .icon_title_section .blocks .items .innerWrapper p {
+              font-size: 16px;
+              line-height: 20px; } }
+
+.bg-section {
+  position: relative;
+  padding: 103px 0 95px; }
+  @media only screen and (max-width: 767px) {
+    .bg-section {
+      padding: 60px 0 50px; } }
+  .bg-section .bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+    .bg-section .bg-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+  .bg-section .title {
+    position: relative;
+    text-align: center;
+    max-width: 540px;
+    margin: auto; }
+    .bg-section .title h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      margin: 0;
+      font-size: 42px;
+      line-height: 48px;
+      margin-bottom: 20px;
+      color: #fff; }
+      @media only screen and (max-width: 767px) {
+        .bg-section .title h2 {
+          font-size: 26px;
+          line-height: 30px;
+          margin-bottom: 15px; } }
+    .bg-section .title h3 {
+      font-family: "DoubleTake-Regular", sans-serif;
+      color: #fff;
+      margin: 0;
+      font-size: 62px;
+      line-height: 48px; }
+      @media only screen and (max-width: 767px) {
+        .bg-section .title h3 {
+          font-size: 32px;
+          line-height: 35px; } }
+
+.img_blocks {
+  width: 100%;
+  display: block;
+  overflow: hidden; }
+  .img_blocks .customRow {
+    display: flex;
+    flex-wrap: wrap; }
+    .img_blocks .customRow .items {
+      position: relative;
+      padding-bottom: 18%;
+      width: 33.3333%; }
+      @media only screen and (max-width: 767px) {
+        .img_blocks .customRow .items {
+          padding-bottom: 50%;
+          width: 100%; } }
+      .img_blocks .customRow .items img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center; }
+
+.contact_form_section {
+  background-color: #efefef;
+  padding: 62px 0; }
+  @media only screen and (max-width: 767px) {
+    .contact_form_section {
+      padding: 30px 0; } }
+  .contact_form_section .innerWrapper {
+    width: 100%;
+    margin: auto;
+    max-width: 450px; }
+    .contact_form_section .innerWrapper .title h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0;
+      color: #000;
+      line-height: normal;
+      margin: 0;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 44px; }
+      @media only screen and (max-width: 767px) {
+        .contact_form_section .innerWrapper .title h2 {
+          margin-bottom: 30px;
+          font-size: 20px; } }
+    .contact_form_section .innerWrapper .contact-form .input-filed {
+      margin-bottom: 27px; }
+      .contact_form_section .innerWrapper .contact-form .input-filed label {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #000;
+        margin: 0;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 10px; }
+      .contact_form_section .innerWrapper .contact-form .input-filed .form-input {
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        border: 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #000;
+        margin: 0;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 13px 10px; }
+      .contact_form_section .innerWrapper .contact-form .input-filed .file_upload {
+        position: relative;
+        min-height: 96px;
+        border: 2px dashed #c7c8ca;
+        background-color: #fff;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        cursor: pointer; }
+        .contact_form_section .innerWrapper .contact-form .input-filed .file_upload .file__input {
+          width: 100%; }
+          .contact_form_section .innerWrapper .contact-form .input-filed .file_upload .file__input input#customFile {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border-radius: 6px;
+            border: 0;
+            font-size: 16px;
+            min-height: 48px;
+            padding: 10px 15px;
+            box-shadow: none;
+            outline: none; }
+          .contact_form_section .innerWrapper .contact-form .input-filed .file_upload .file__input label {
+            width: 100%;
+            font-family: "MyriadPro", sans-serif;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 0;
+            display: block; }
+            .contact_form_section .innerWrapper .contact-form .input-filed .file_upload .file__input label span {
+              color: #b2b3b6;
+              font-family: "MyriadPro", sans-serif;
+              font-size: 16px;
+              margin-bottom: 0;
+              display: block; }
+              .contact_form_section .innerWrapper .contact-form .input-filed .file_upload .file__input label span small {
+                color: #b2b3b6;
+                font-size: 100%;
+                border: 1px solid #c7c8ca;
+                padding: 3px 5px;
+                border-radius: 6px;
+                display: inline-flex;
+                margin-left: 3px; }
+              .contact_form_section .innerWrapper .contact-form .input-filed .file_upload .file__input label span h4 {
+                margin: 0;
+                font-family: "MyriadPro", sans-serif;
+                font-weight: 700;
+                font-size: 16px; }
+    .contact_form_section .innerWrapper .contact-form .privacy-content {
+      margin-bottom: 13px;
+      text-align: left; }
+      .contact_form_section .innerWrapper .contact-form .privacy-content p, .contact_form_section .innerWrapper .contact-form .privacy-content a {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
+        color: #000;
+        text-align: left;
+        line-height: normal;
+        margin: 0;
+        font-size: 9px;
+        line-height: 10px;
+        margin-bottom: 8px; }
+      .contact_form_section .innerWrapper .contact-form .privacy-content a {
+        text-decoration: underline; }
+    .contact_form_section .innerWrapper .contact-form .btn-submit {
+      background-color: #a9132a;
+      border-radius: 5px;
+      border: 0;
+      box-shadow: none;
+      outline: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+      font-size: 16px;
+      line-height: 16px;
+      padding: 10px 25px; }
 
 /*# sourceMappingURL=custom.css.map */
